@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-4.15.0-1080-gcp root=LABEL=cloudimg-rootfs ro scsi_mod.use_blk_mq=Y console=ttyS0
