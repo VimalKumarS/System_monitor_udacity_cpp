@@ -128,16 +128,16 @@ void NCursesDisplay::DisplayProcesses_test(std::vector<Process>& processes,int n
 
 void NCursesDisplay::DisplaySystem_test(System& system) {
 
-    std::cout << ("OS: " + system.OperatingSystem()).c_str() << std::endl;
-    std::cout << ("Kernel: " + system.Kernel()).c_str()<< std::endl;
+//    std::cout << ("OS: " + system.OperatingSystem()).c_str() << std::endl;
+//    std::cout << ("Kernel: " + system.Kernel()).c_str()<< std::endl;
     std::cout << ProgressBar(system.Cpu().Utilization()).c_str()<< std::endl;
-    std::cout << ProgressBar(system.MemoryUtilization()).c_str()<< std::endl;
-    std::cout <<
-              ("Total Processes: " + to_string(system.TotalProcesses())).c_str()<< std::endl;
-    std::cout <<
-            ("Running Processes: " + to_string(system.RunningProcesses())).c_str()<< std::endl;
-    std::cout <<
-              ("Up Time: " + Format::ElapsedTime(system.UpTime())).c_str()<< std::endl;
+//    std::cout << ProgressBar(system.MemoryUtilization()).c_str()<< std::endl;
+//    std::cout <<
+//              ("Total Processes: " + to_string(system.TotalProcesses())).c_str()<< std::endl;
+//    std::cout <<
+//            ("Running Processes: " + to_string(system.RunningProcesses())).c_str()<< std::endl;
+//    std::cout <<
+//              ("Up Time: " + Format::ElapsedTime(system.UpTime())).c_str()<< std::endl;
 
 }
 
@@ -150,4 +150,4 @@ void NCursesDisplay::Display_test(System& system, int n) {
         std::this_thread::sleep_for(std::chrono::seconds(3));
 //    }
 }
- */
+*/
