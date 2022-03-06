@@ -11,9 +11,9 @@ const int ONE_MINUE = 60;
 // REMOVE: [[maybe_unused]] once you define the function
 string Format::ElapsedTime(long seconds) {
     long hour = seconds / ONE_HOUR;
-    seconds = hour % ONE_HOUR;
+    seconds = seconds % ONE_HOUR;
     long min = seconds / ONE_MINUE;
-    seconds = min % ONE_HOUR;
+    seconds = seconds % ONE_MINUE;
     long sec = seconds;
     return std::to_string(hour) + ":" + std::to_string(min) + ":" +
            std::to_string(sec);
